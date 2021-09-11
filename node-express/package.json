@@ -1,0 +1,15 @@
+{
+    "name": "node-express",
+    "version": "1.0.0",
+    "description": "node-express-examples",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index"
+    },
+    "author": "Pranjay Poddar",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.3"
+    }
+}
