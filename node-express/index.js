@@ -6,13 +6,19 @@ const port = 3000;
 
 
 const dishRouter = require('./routes/dishRouter');
-// const dishIDRouter = require('./routes/dishRouter');
+const promoRouter = require('./routes/promoRouter');
+const leaderRouter = require('./routes/leaderRouter');
+
 const app = express();
 app.use(morgan('dev'));
 app.use(express.json()); //in place of body-parser
 app.use(express.static(__dirname + '/public'));
 app.use('/dishes', dishRouter);
 app.use('/dishes/dishID', dishRouter);
+app.use('/promotions', promoRouter);
+app.use('/promotions/promoID', promoRouter);
+app.use('/leaders', leaderRouter);
+app.use('/leaders/leaderID', leaderRouter);
 
 
 

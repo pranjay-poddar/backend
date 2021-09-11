@@ -1,6 +1,5 @@
 const express = require('express');
 const dishRouter = express.Router();
-const dishIDRouter = express.Router();
 const app = express();
 app.use(express.json()); //in place of body-parser
 
